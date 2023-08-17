@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy || Discount</title>
+    <!-- ==========--- tailwind css link ---========== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex items-center justify-center h-[100vh]">
+        <section style="background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./img/Money-Transfer.webp);" class="bg-no-repeat bg-center bg-cover rounded-md p-5 w-full mx-1 md:w-8/12 bg-transparent text-white ">
+            <h1 class="text-5xl text-cente mb-12">Payment Processing...</h1>
+            <p class="mb-1">Your total Payable amount is <span class="font-semibold">1000 BDT</span>. Now you can save 30% of payment using coupon #COUP30</p>
+            
+            <div class="flex flex-col items-center gap-0 justify-between w-full rounded-md bg-black md:flex-row md:w-[50%] ">
+                <input type="text" placeholder="Enter the coupon code:" id="coupon-input" class="w-[66.5%] p-2 bg-white text-black rounded-l-md focus:outline-none focus:bg-gray-200 ">
+                
+                <button disable id="apply-btn" class=" px-[1rem] py-[.5rem] rounded-r-md font-semibold block mx-auto text-white bg-black active:bg-gray-300 active:text-black">Apply Coupon</button>
+            </div>
+            <p class="mb-8">Discounted <span id="discounted-amount" class="font-semibold">00</span> <span class="font-semibold">BDT.</span></p>
+
+            <p class="mb-1">Please Pay <span id="Payable-amount" class="font-semibold">1000</span> <span class="font-semibold">BDT.</span></p>
+            <div class="flex flex-col items-center gap-0 justify-between rounded-md bg-black  md:flex-row">
+                <input type="text" placeholder="Enter Amount in BDT." id="amount-input" class="w-[80.5%] p-2 bg-white text-black rounded-l-md focus:outline-none focus:bg-gray-100 ">
+                <button id="payment-confirmed" class=" px-[1rem] py-[.5rem] rounded-r-md font-semibold block mx-auto text-white bg-black active:bg-gray-300 active:text-black">Confirm Payment</button>
+            </div>
+        </section>
+    </main>
+    <!-- ==========--- Js source link ---========== -->
+    <script src="index.js"></script>
+</body>
+</html>
